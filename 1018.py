@@ -1,6 +1,7 @@
+tk = int(input())
+note = [100, 50, 20, 10, 5, 2 , 1]
+print(tk)
 
-tk = input()
-
-for i in range(tk):
-    if range(tk)>=3:
-        print(f'{tk[0:-3]} nota(s) de R$ 100,00')
+for x in note:
+    print(f'{tk//x} nota(s) de R$ {x},00')
+    tk = tk % x
